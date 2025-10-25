@@ -1,0 +1,7 @@
+.venv/
+_pycache__/
+.vscode/
+Images/
+L22_V029/
+Objects/ 
+*.pyc
