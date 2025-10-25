@@ -36,12 +36,3 @@ def display(image_path, boxes, labels=None, scores=None):
     img.show()
 
     return img
-
-if __name__ == "__main__":
-    # Example usage
-    image_path = "D:/Python/CLIP-DEMO/Images/cat.jpg"
-    boxes = [[50, 50, 200, 200]]
-    labels = ["Cat"]
-    scores = [0.95]
-
-    display(image_path, boxes, labels, scores)

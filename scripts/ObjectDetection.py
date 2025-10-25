@@ -1,11 +1,15 @@
 import os
 from ultralytics import YOLO
 # from ColorDetect import DominantColor
-import DisplayBbox
-from SaveJson import save
+import scripts.DisplayBbox as DisplayBbox
+from scripts.SaveJson import save
+
+MODEL1 = "models\yolo11m.pt"
+MODEL2 = "models\yolov8l-oiv7.pt"
+MODEL3 = "models\yolo-spec.pt"
 
 class YOLODetector: 
-    def __init__(self, model_base = "yolo11m.pt", model_sup="yolov8l-oiv7.pt", model_spec="yolo-spec.pt"):
+    def __init__(self, model_base=MODEL1, model_sup=MODEL2, model_spec=MODEL3):
         self.model_base = YOLO(model_base)
         self.model_sup = YOLO(model_sup)
         self.model_spec = YOLO(model_spec)
@@ -15,7 +19,6 @@ class YOLODetector:
         results2 = self.model_sup(image_paths, show=False, verbose=False, device = device)
         results3 = self.model_spec(image_paths, show=False, verbose=False, device = device)
         
-
         
         for idx, image_path in enumerate(image_paths):
             labels = []
@@ -63,7 +66,7 @@ class YOLODetector:
             
             if object_folder is not None:
                 filename = os.path.basename(image_path)
-                name, ext = os.path.splitext(filename)
+                name, _ = os.path.splitext(filename)
                 save(vid, name, detection, object_folder + "\\" + name + ".json")
 
         return detection
