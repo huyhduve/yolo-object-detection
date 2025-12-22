@@ -1,7 +1,5 @@
 YOLO11s - finetuned: 
-[
-    "Ao dai", "conical hat", "chef", "ethnic costume"
-]
+["Ao dai", "conical hat", "chef", "ethnic costume", "police", "traffic police"]
 
 YOLO11m [80 classes]
 [person, bicycle, car, motorcycle, airplane, bus, train, truck, boat, traffic light,

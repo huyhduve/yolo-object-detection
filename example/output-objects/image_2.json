@@ -1,0 +1,70 @@
+{
+  "Vid_id": "image_2",
+  "detections": [
+    {
+      "label": "person",
+      "bbox": [
+        39,
+        6,
+        104,
+        199
+      ],
+      "conf": 0.8698404431343079
+    },
+    {
+      "label": "person",
+      "bbox": [
+        139,
+        17,
+        225,
+        158
+      ],
+      "conf": 0.8475804328918457
+    },
+    {
+      "label": "person",
+      "bbox": [
+        6,
+        42,
+        39,
+        138
+      ],
+      "conf": 0.7918156981468201
+    },
+    {
+      "label": "person",
+      "bbox": [
+        88,
+        39,
+        115,
+        137
+      ],
+      "conf": 0.7157970070838928
+    },
+    {
+      "label": "firefighter",
+      "bbox": [
+        38,
+        9,
+        96,
+        200
+      ],
+      "conf": 0.8951902985572815
+    },
+    {
+      "label": "firefighter",
+      "bbox": [
+        140,
+        22,
+        198,
+        156
+      ],
+      "conf": 0.8751534819602966
+    }
+  ],
+  "object_counts": {
+    "person": 4,
+    "firefighter": 2
+  },
+  "total_objects": 6
+}

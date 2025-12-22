@@ -1,0 +1,30 @@
+{
+  "Vid_id": "image_3",
+  "detections": [
+    {
+      "label": "bus",
+      "bbox": [
+        0,
+        52,
+        288,
+        233
+      ],
+      "conf": 0.7755877375602722
+    },
+    {
+      "label": "Van",
+      "bbox": [
+        0,
+        62,
+        288,
+        233
+      ],
+      "conf": 0.8622037768363953
+    }
+  ],
+  "object_counts": {
+    "bus": 1,
+    "Van": 1
+  },
+  "total_objects": 2
+}
