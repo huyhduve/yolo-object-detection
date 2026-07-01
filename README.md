@@ -11,7 +11,7 @@ This project applies YOLOv8-oiv7, YOLO11m for object detection using two pretrai
 ## 🚀 How to Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/yolo-object-detection.git
+   git clone https://github.com/huyhduve/yolo-object-detection.git
    cd yolo-object-detection
 
 ## 🧠 Using YOLODetector as a Module
